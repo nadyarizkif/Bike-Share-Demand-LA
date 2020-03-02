@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            background-image: url("https://www.tripsavvy.com/thmb/1WShIKdQcX6ZpXhJH5bTALtNmeY=/3865x2576/filters:fill(auto,1)/young-woman-cycling-at-beach-looking-out-to-sea--venice-beach--california--usa-650173627-5b6260324cedfd0050938262.jpg");
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        tex {
+          color: white;
+          font-family: "Helvetica";
+          font-size: 20px;
+          font-weight: normal;
+          text-shadow: 3px 3px 3px gray;;
+        }
+        center {
+            margin-left: 10%;
+            margin-right: 50%;
+        }
+        
+        h2 {
+          color: white;
+          font-family: "Helvetica";
+          font-weight: normal;
+          text-shadow: -2px -2px 0 #000, 1px -1px 0 #000, -2px  2px 0 #000, 2px  2px 0 #000
+        }
+        box {
+            border: 7px inset #FFA527;
+            background-color: #C0FFEE;
+        }
+        div {
+            width: 400px;
+            height: 100px;
+            border: 7px white;
+            font-family: "Helvetica";
+            font-size: 20px;
+            margin: 10px
+        }
+        h0 {
+          color: white;
+          font-family: "Helvetica";
+          font-weight: normal;
+          text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px  2px 0 #000, 2px  2px 0 #000;
+          font-size: 35px
+        }
+
+    </style>
+</head>
+<body>
+    <center><h0 style="position:fixed; top:100px;">The position with <br>Longitude of {{long}} <br>and Latitude of {{lat}}<br>
+        Potentially service {{potensi}} bikers <br>per year (on {{week}} and {{rains}})</h0>
+    </center>
+    <center><form method="POST" action="http://localhost:2020/" style="position:fixed; top:550px;">
+       <button><input type = "submit" value = "Again!" /></button> 
+    </form></center>
+</body>
+
+</html>
